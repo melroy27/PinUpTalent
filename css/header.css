@@ -1,0 +1,19 @@
+.nav{
+    height:80px;
+    min-height: 50px;
+    backface-visibility: hidden;
+    z-index: 120;
+    position: relative;
+    transition:height .3s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom:0;
+    list-style:none;
+}
+.header{
+    display: block;
+}
+*, ::after, ::before{
+    box-sizing: border-box;
+}

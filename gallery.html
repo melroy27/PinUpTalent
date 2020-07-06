@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>image gallery</title>
+        <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    </head>
+    <body>
+        <div id="img-box" class="small">
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+            <img src="mdv.jpg" id="smallimg">
+        </div>
+        <div class="imageList">
+            <ul>
+                <li onclick="onWebsite()">WEBSITE</li>
+                <li onclick="onMobileApp()">MOBILE APP</li>
+                <li onclick="onMarketing()">MARKETING</li>
+                <li onclick="onSoftware()">SOFTWARES</li>
+                
+            </ul>
+        </div>
+        <div class="btn-box" onclick="imageSize()">
+            <span id="btnIcon">&#9776;</span>
+        </div>
+        <script>
+            var smallImg=document.getElementById("smallimg");
+            var imgBox=document.getElementById("img-box");
+            var menuIcon=document.getElementById("btnIcon");
+            function onWebsite(){
+                smallImg.src="mdv.jpg";
+            }
+            function onMobileApp(){
+                smallImg.src="mdv1.jpg";
+            }
+            function onMarketing(){
+                smallImg.src="mdv2.jpg";
+            }
+            function onSoftware(){
+                smallImg.src="nature1.jpg";
+            }
+            function imageSize()
+            {
+                if(imgBox.className == "small")
+                {
+                    imgBox.className="full";
+                    menuIcon.innerHTML="&#9776";
+                }
+                else
+                {
+                    imgBox.className="small";
+                    menuIcon.innerHTML="&#10006";
+                }
+            }
+        </script>
+    </body>
+</html>
