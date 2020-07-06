@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+        
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></script> -->
+    <script defer src="https://kit.fontawesome.com/b41bf38fa3.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <script>
+function openSlideMenu(){
+    document.getElementById('menu').style.width= '250px';
+    document.getElementById('content').style.marginLeft='250px';
+
+}
+function closesSideMenu(){
+    document.getElementById('menu').style.width= '0';
+    document.getElementById('content').style.marginLeft='0';
+    
+}
+    </script>
+    <body>
+        <div id="content">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+            <div id="menu" class="nav">
+                <a href="" class="close" onclick="closesSideMenu()">
+                    <i class="fas fa-times"></i>
+                </a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Portfolio</a>
+            </div>
+            <h1>Welcome '.$name.'</h1>
+
+        </div>
+    </body>
+</head>
+</html>
